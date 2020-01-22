@@ -1,0 +1,1337 @@
+{
+  "contractName": "Engine",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "payFeesInEther",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "thaw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPriceWindow",
+      "outputs": [
+        {
+          "name": "window",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "percentageMultiplier",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "enginePrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "necAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ethPayoutForNecAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "necAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "sellAndBurnNec",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNextPriceChange",
+      "outputs": [
+        {
+          "name": "newPrice",
+          "type": "uint256"
+        },
+        {
+          "name": "nextChangeTimeSeconds",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNextAuction",
+      "outputs": [
+        {
+          "name": "nextStartTimeSeconds",
+          "type": "uint256"
+        },
+        {
+          "name": "predictedEthAvailable",
+          "type": "uint256"
+        },
+        {
+          "name": "predictedStartingPrice",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"@openzeppelin/contracts/math/SafeMath.sol\";\n\n/// @notice NEC Auction Engine\ninterface Engine {\n\n    function payFeesInEther() external payable;\n\n    function thaw() external;\n\n    function getPriceWindow() external view returns (uint window);\n\n    function percentageMultiplier() external view returns (uint);\n\n    function enginePrice() external view returns (uint);\n\n    function ethPayoutForNecAmount(uint necAmount) external view returns (uint);\n\n    function sellAndBurnNec(uint necAmount) external;\n\n    function getNextPriceChange() external view returns (\n        uint newPrice,\n        uint nextChangeTimeSeconds );\n\n    function getNextAuction() external view returns (\n        uint nextStartTimeSeconds,\n        uint predictedEthAvailable,\n        uint predictedStartingPrice\n        );\n\n\n}\n",
+  "sourcePath": "/Users/willharborne/Desktop/EFX/repos/nec-controller/contracts/interfaces/IEngine.sol",
+  "ast": {
+    "absolutePath": "/Users/willharborne/Desktop/EFX/repos/nec-controller/contracts/interfaces/IEngine.sol",
+    "exportedSymbols": {
+      "Engine": [
+        1787
+      ]
+    },
+    "id": 1788,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1736,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+        "file": "@openzeppelin/contracts/math/SafeMath.sol",
+        "id": 1737,
+        "nodeType": "ImportDirective",
+        "scope": 1788,
+        "sourceUnit": 2076,
+        "src": "25:51:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@notice NEC Auction Engine",
+        "fullyImplemented": false,
+        "id": 1787,
+        "linearizedBaseContracts": [
+          1787
+        ],
+        "name": "Engine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1740,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "payFeesInEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1738,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:2:4"
+            },
+            "returnParameters": {
+              "id": 1739,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "175:0:4"
+            },
+            "scope": 1787,
+            "src": "133:43:4",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1743,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "thaw",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1741,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "195:2:4"
+            },
+            "returnParameters": {
+              "id": 1742,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "206:0:4"
+            },
+            "scope": 1787,
+            "src": "182:25:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1748,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPriceWindow",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:2:4"
+            },
+            "returnParameters": {
+              "id": 1747,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1746,
+                  "name": "window",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1748,
+                  "src": "262:11:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1745,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "262:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "261:13:4"
+            },
+            "scope": 1787,
+            "src": "213:62:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1753,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "percentageMultiplier",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1749,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "310:2:4"
+            },
+            "returnParameters": {
+              "id": 1752,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1751,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1753,
+                  "src": "336:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1750,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "336:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "335:6:4"
+            },
+            "scope": 1787,
+            "src": "281:61:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1758,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enginePrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1754,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "368:2:4"
+            },
+            "returnParameters": {
+              "id": 1757,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1756,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1758,
+                  "src": "394:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1755,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:6:4"
+            },
+            "scope": 1787,
+            "src": "348:52:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1765,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ethPayoutForNecAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1760,
+                  "name": "necAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1765,
+                  "src": "437:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1759,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "437:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "436:16:4"
+            },
+            "returnParameters": {
+              "id": 1764,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1763,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1765,
+                  "src": "476:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1762,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "475:6:4"
+            },
+            "scope": 1787,
+            "src": "406:76:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1770,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sellAndBurnNec",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1768,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1767,
+                  "name": "necAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1770,
+                  "src": "512:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1766,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "512:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "511:16:4"
+            },
+            "returnParameters": {
+              "id": 1769,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "536:0:4"
+            },
+            "scope": 1787,
+            "src": "488:49:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1777,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNextPriceChange",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1771,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "570:2:4"
+            },
+            "returnParameters": {
+              "id": 1776,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1773,
+                  "name": "newPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1777,
+                  "src": "605:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1772,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "605:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1775,
+                  "name": "nextChangeTimeSeconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1777,
+                  "src": "628:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1774,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "628:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "595:61:4"
+            },
+            "scope": 1787,
+            "src": "543:114:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1786,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNextAuction",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1778,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "686:2:4"
+            },
+            "returnParameters": {
+              "id": 1785,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1780,
+                  "name": "nextStartTimeSeconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1786,
+                  "src": "721:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1779,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "721:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1782,
+                  "name": "predictedEthAvailable",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1786,
+                  "src": "756:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1781,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "756:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1784,
+                  "name": "predictedStartingPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1786,
+                  "src": "792:27:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1783,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "792:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "711:118:4"
+            },
+            "scope": 1787,
+            "src": "663:167:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1788,
+        "src": "109:725:4"
+      }
+    ],
+    "src": "0:835:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/willharborne/Desktop/EFX/repos/nec-controller/contracts/interfaces/IEngine.sol",
+    "exportedSymbols": {
+      "Engine": [
+        1787
+      ]
+    },
+    "id": 1788,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1736,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:4"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+        "file": "@openzeppelin/contracts/math/SafeMath.sol",
+        "id": 1737,
+        "nodeType": "ImportDirective",
+        "scope": 1788,
+        "sourceUnit": 2076,
+        "src": "25:51:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": "@notice NEC Auction Engine",
+        "fullyImplemented": false,
+        "id": 1787,
+        "linearizedBaseContracts": [
+          1787
+        ],
+        "name": "Engine",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1740,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "payFeesInEther",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1738,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "156:2:4"
+            },
+            "returnParameters": {
+              "id": 1739,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "175:0:4"
+            },
+            "scope": 1787,
+            "src": "133:43:4",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1743,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "thaw",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1741,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "195:2:4"
+            },
+            "returnParameters": {
+              "id": 1742,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "206:0:4"
+            },
+            "scope": 1787,
+            "src": "182:25:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1748,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPriceWindow",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1744,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:2:4"
+            },
+            "returnParameters": {
+              "id": 1747,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1746,
+                  "name": "window",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1748,
+                  "src": "262:11:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1745,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "262:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "261:13:4"
+            },
+            "scope": 1787,
+            "src": "213:62:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1753,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "percentageMultiplier",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1749,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "310:2:4"
+            },
+            "returnParameters": {
+              "id": 1752,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1751,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1753,
+                  "src": "336:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1750,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "336:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "335:6:4"
+            },
+            "scope": 1787,
+            "src": "281:61:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1758,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "enginePrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1754,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "368:2:4"
+            },
+            "returnParameters": {
+              "id": 1757,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1756,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1758,
+                  "src": "394:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1755,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "394:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "393:6:4"
+            },
+            "scope": 1787,
+            "src": "348:52:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1765,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "ethPayoutForNecAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1761,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1760,
+                  "name": "necAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1765,
+                  "src": "437:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1759,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "437:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "436:16:4"
+            },
+            "returnParameters": {
+              "id": 1764,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1763,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1765,
+                  "src": "476:4:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1762,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "476:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "475:6:4"
+            },
+            "scope": 1787,
+            "src": "406:76:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1770,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sellAndBurnNec",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1768,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1767,
+                  "name": "necAmount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1770,
+                  "src": "512:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1766,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "512:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "511:16:4"
+            },
+            "returnParameters": {
+              "id": 1769,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "536:0:4"
+            },
+            "scope": 1787,
+            "src": "488:49:4",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1777,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNextPriceChange",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1771,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "570:2:4"
+            },
+            "returnParameters": {
+              "id": 1776,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1773,
+                  "name": "newPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1777,
+                  "src": "605:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1772,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "605:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1775,
+                  "name": "nextChangeTimeSeconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1777,
+                  "src": "628:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1774,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "628:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "595:61:4"
+            },
+            "scope": 1787,
+            "src": "543:114:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 1786,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNextAuction",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1778,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "686:2:4"
+            },
+            "returnParameters": {
+              "id": 1785,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1780,
+                  "name": "nextStartTimeSeconds",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1786,
+                  "src": "721:25:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1779,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "721:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1782,
+                  "name": "predictedEthAvailable",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1786,
+                  "src": "756:26:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1781,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "756:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1784,
+                  "name": "predictedStartingPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1786,
+                  "src": "792:27:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1783,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "792:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "711:118:4"
+            },
+            "scope": 1787,
+            "src": "663:167:4",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1788,
+        "src": "109:725:4"
+      }
+    ],
+    "src": "0:835:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2020-01-22T10:12:29.507Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "NEC Auction Engine"
+  }
+}
