@@ -21,20 +21,15 @@ contract NectarController is TokenController, Ownable {
     using SafeMath for uint256;
 
     INEC public tokenContract;   // The new token for this Campaign
-    address public vaultAddress;        // The address to hold the funds donated
 
 
     /// @dev There are several checks to make sure the parameters are acceptable
-    /// @param _vaultAddress The address that will store the donated funds
     /// @param _tokenAddress Address of the token contract this contract controls
 
     constructor (
-        address _vaultAddress,
         address _tokenAddress
     ) public {
-        require(_vaultAddress != address(0));                // To prevent burning ETH
         tokenContract = INEC(_tokenAddress); // The Deployed Token Contract
-        vaultAddress = _vaultAddress;
     }
 
     /// @dev The fallback function is called when ether is sent to the contract, it

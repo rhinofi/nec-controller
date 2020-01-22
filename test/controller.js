@@ -18,7 +18,7 @@ contract('Controller', async (accounts) => {
 
         const tokenFactory = await MiniMeTokenFactory.new()
         nec = await NEC.new(tokenFactory.address, vaultWallet)
-        controller = await Controller.new(vaultWallet, nec.address)
+        controller = await Controller.new(nec.address)
 
         await nec.transfer(accounts[1], _1e18.mul(new BN(10000)))
         await nec.transfer(accounts[2], _1e18.mul(new BN(10000)))

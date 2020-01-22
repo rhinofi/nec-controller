@@ -146,14 +146,14 @@
     "absolutePath": "/Users/willharborne/Desktop/EFX/repos/nec-controller/contracts/interfaces/IEngine.sol",
     "exportedSymbols": {
       "Engine": [
-        1787
+        1771
       ]
     },
-    "id": 1788,
+    "id": 1772,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1736,
+        "id": 1720,
         "literals": [
           "solidity",
           "^",
@@ -166,10 +166,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
         "file": "@openzeppelin/contracts/math/SafeMath.sol",
-        "id": 1737,
+        "id": 1721,
         "nodeType": "ImportDirective",
-        "scope": 1788,
-        "sourceUnit": 2076,
+        "scope": 1772,
+        "sourceUnit": 2060,
         "src": "25:51:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -180,9 +180,9 @@
         "contractKind": "interface",
         "documentation": "@notice NEC Auction Engine",
         "fullyImplemented": false,
-        "id": 1787,
+        "id": 1771,
         "linearizedBaseContracts": [
-          1787
+          1771
         ],
         "name": "Engine",
         "nodeType": "ContractDefinition",
@@ -190,25 +190,25 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1740,
+            "id": 1724,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "payFeesInEther",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1738,
+              "id": 1722,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "156:2:4"
             },
             "returnParameters": {
-              "id": 1739,
+              "id": 1723,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "175:0:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "133:43:4",
             "stateMutability": "payable",
             "superFunction": null,
@@ -217,25 +217,25 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1743,
+            "id": 1727,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "thaw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1741,
+              "id": 1725,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "195:2:4"
             },
             "returnParameters": {
-              "id": 1742,
+              "id": 1726,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "206:0:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "182:25:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -244,28 +244,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1748,
+            "id": 1732,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getPriceWindow",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1744,
+              "id": 1728,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "236:2:4"
             },
             "returnParameters": {
-              "id": 1747,
+              "id": 1731,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1746,
+                  "id": 1730,
                   "name": "window",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1748,
+                  "scope": 1732,
                   "src": "262:11:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -274,7 +274,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1745,
+                    "id": 1729,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "262:4:4",
@@ -289,7 +289,7 @@
               ],
               "src": "261:13:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "213:62:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -298,28 +298,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1753,
+            "id": 1737,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "percentageMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1749,
+              "id": 1733,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "310:2:4"
             },
             "returnParameters": {
-              "id": 1752,
+              "id": 1736,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1751,
+                  "id": 1735,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1753,
+                  "scope": 1737,
                   "src": "336:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -328,7 +328,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1750,
+                    "id": 1734,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "336:4:4",
@@ -343,7 +343,7 @@
               ],
               "src": "335:6:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "281:61:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -352,28 +352,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1758,
+            "id": 1742,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "enginePrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1754,
+              "id": 1738,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "368:2:4"
             },
             "returnParameters": {
-              "id": 1757,
+              "id": 1741,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1756,
+                  "id": 1740,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1758,
+                  "scope": 1742,
                   "src": "394:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -382,7 +382,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1755,
+                    "id": 1739,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "394:4:4",
@@ -397,7 +397,7 @@
               ],
               "src": "393:6:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "348:52:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -406,22 +406,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1765,
+            "id": 1749,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "ethPayoutForNecAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1761,
+              "id": 1745,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1760,
+                  "id": 1744,
                   "name": "necAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1765,
+                  "scope": 1749,
                   "src": "437:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -430,7 +430,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1759,
+                    "id": 1743,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "437:4:4",
@@ -446,15 +446,15 @@
               "src": "436:16:4"
             },
             "returnParameters": {
-              "id": 1764,
+              "id": 1748,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1763,
+                  "id": 1747,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1765,
+                  "scope": 1749,
                   "src": "476:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -463,7 +463,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1762,
+                    "id": 1746,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "476:4:4",
@@ -478,7 +478,7 @@
               ],
               "src": "475:6:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "406:76:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -487,22 +487,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1770,
+            "id": 1754,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "sellAndBurnNec",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1768,
+              "id": 1752,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1767,
+                  "id": 1751,
                   "name": "necAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1770,
+                  "scope": 1754,
                   "src": "512:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -511,7 +511,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1766,
+                    "id": 1750,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "512:4:4",
@@ -527,12 +527,12 @@
               "src": "511:16:4"
             },
             "returnParameters": {
-              "id": 1769,
+              "id": 1753,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "536:0:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "488:49:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -541,28 +541,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1777,
+            "id": 1761,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getNextPriceChange",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1771,
+              "id": 1755,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "570:2:4"
             },
             "returnParameters": {
-              "id": 1776,
+              "id": 1760,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1773,
+                  "id": 1757,
                   "name": "newPrice",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1777,
+                  "scope": 1761,
                   "src": "605:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -571,7 +571,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1772,
+                    "id": 1756,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "605:4:4",
@@ -585,10 +585,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1775,
+                  "id": 1759,
                   "name": "nextChangeTimeSeconds",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1777,
+                  "scope": 1761,
                   "src": "628:26:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -597,7 +597,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1774,
+                    "id": 1758,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "628:4:4",
@@ -612,7 +612,7 @@
               ],
               "src": "595:61:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "543:114:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -621,28 +621,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1786,
+            "id": 1770,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getNextAuction",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1778,
+              "id": 1762,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "686:2:4"
             },
             "returnParameters": {
-              "id": 1785,
+              "id": 1769,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1780,
+                  "id": 1764,
                   "name": "nextStartTimeSeconds",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1786,
+                  "scope": 1770,
                   "src": "721:25:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -651,7 +651,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1779,
+                    "id": 1763,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "721:4:4",
@@ -665,10 +665,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1782,
+                  "id": 1766,
                   "name": "predictedEthAvailable",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1786,
+                  "scope": 1770,
                   "src": "756:26:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -677,7 +677,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1781,
+                    "id": 1765,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "756:4:4",
@@ -691,10 +691,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1784,
+                  "id": 1768,
                   "name": "predictedStartingPrice",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1786,
+                  "scope": 1770,
                   "src": "792:27:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -703,7 +703,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1783,
+                    "id": 1767,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "792:4:4",
@@ -718,14 +718,14 @@
               ],
               "src": "711:118:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "663:167:4",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1788,
+        "scope": 1772,
         "src": "109:725:4"
       }
     ],
@@ -735,14 +735,14 @@
     "absolutePath": "/Users/willharborne/Desktop/EFX/repos/nec-controller/contracts/interfaces/IEngine.sol",
     "exportedSymbols": {
       "Engine": [
-        1787
+        1771
       ]
     },
-    "id": 1788,
+    "id": 1772,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1736,
+        "id": 1720,
         "literals": [
           "solidity",
           "^",
@@ -755,10 +755,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
         "file": "@openzeppelin/contracts/math/SafeMath.sol",
-        "id": 1737,
+        "id": 1721,
         "nodeType": "ImportDirective",
-        "scope": 1788,
-        "sourceUnit": 2076,
+        "scope": 1772,
+        "sourceUnit": 2060,
         "src": "25:51:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -769,9 +769,9 @@
         "contractKind": "interface",
         "documentation": "@notice NEC Auction Engine",
         "fullyImplemented": false,
-        "id": 1787,
+        "id": 1771,
         "linearizedBaseContracts": [
-          1787
+          1771
         ],
         "name": "Engine",
         "nodeType": "ContractDefinition",
@@ -779,25 +779,25 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1740,
+            "id": 1724,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "payFeesInEther",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1738,
+              "id": 1722,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "156:2:4"
             },
             "returnParameters": {
-              "id": 1739,
+              "id": 1723,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "175:0:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "133:43:4",
             "stateMutability": "payable",
             "superFunction": null,
@@ -806,25 +806,25 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1743,
+            "id": 1727,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "thaw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1741,
+              "id": 1725,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "195:2:4"
             },
             "returnParameters": {
-              "id": 1742,
+              "id": 1726,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "206:0:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "182:25:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -833,28 +833,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1748,
+            "id": 1732,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getPriceWindow",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1744,
+              "id": 1728,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "236:2:4"
             },
             "returnParameters": {
-              "id": 1747,
+              "id": 1731,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1746,
+                  "id": 1730,
                   "name": "window",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1748,
+                  "scope": 1732,
                   "src": "262:11:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -863,7 +863,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1745,
+                    "id": 1729,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "262:4:4",
@@ -878,7 +878,7 @@
               ],
               "src": "261:13:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "213:62:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -887,28 +887,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1753,
+            "id": 1737,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "percentageMultiplier",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1749,
+              "id": 1733,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "310:2:4"
             },
             "returnParameters": {
-              "id": 1752,
+              "id": 1736,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1751,
+                  "id": 1735,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1753,
+                  "scope": 1737,
                   "src": "336:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -917,7 +917,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1750,
+                    "id": 1734,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "336:4:4",
@@ -932,7 +932,7 @@
               ],
               "src": "335:6:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "281:61:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -941,28 +941,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1758,
+            "id": 1742,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "enginePrice",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1754,
+              "id": 1738,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "368:2:4"
             },
             "returnParameters": {
-              "id": 1757,
+              "id": 1741,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1756,
+                  "id": 1740,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1758,
+                  "scope": 1742,
                   "src": "394:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -971,7 +971,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1755,
+                    "id": 1739,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "394:4:4",
@@ -986,7 +986,7 @@
               ],
               "src": "393:6:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "348:52:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -995,22 +995,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1765,
+            "id": 1749,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "ethPayoutForNecAmount",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1761,
+              "id": 1745,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1760,
+                  "id": 1744,
                   "name": "necAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1765,
+                  "scope": 1749,
                   "src": "437:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1019,7 +1019,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1759,
+                    "id": 1743,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "437:4:4",
@@ -1035,15 +1035,15 @@
               "src": "436:16:4"
             },
             "returnParameters": {
-              "id": 1764,
+              "id": 1748,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1763,
+                  "id": 1747,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1765,
+                  "scope": 1749,
                   "src": "476:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1052,7 +1052,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1762,
+                    "id": 1746,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "476:4:4",
@@ -1067,7 +1067,7 @@
               ],
               "src": "475:6:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "406:76:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -1076,22 +1076,22 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1770,
+            "id": 1754,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "sellAndBurnNec",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1768,
+              "id": 1752,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1767,
+                  "id": 1751,
                   "name": "necAmount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1770,
+                  "scope": 1754,
                   "src": "512:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1100,7 +1100,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1766,
+                    "id": 1750,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "512:4:4",
@@ -1116,12 +1116,12 @@
               "src": "511:16:4"
             },
             "returnParameters": {
-              "id": 1769,
+              "id": 1753,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "536:0:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "488:49:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1130,28 +1130,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1777,
+            "id": 1761,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getNextPriceChange",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1771,
+              "id": 1755,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "570:2:4"
             },
             "returnParameters": {
-              "id": 1776,
+              "id": 1760,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1773,
+                  "id": 1757,
                   "name": "newPrice",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1777,
+                  "scope": 1761,
                   "src": "605:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1160,7 +1160,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1772,
+                    "id": 1756,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "605:4:4",
@@ -1174,10 +1174,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1775,
+                  "id": 1759,
                   "name": "nextChangeTimeSeconds",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1777,
+                  "scope": 1761,
                   "src": "628:26:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1186,7 +1186,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1774,
+                    "id": 1758,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "628:4:4",
@@ -1201,7 +1201,7 @@
               ],
               "src": "595:61:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "543:114:4",
             "stateMutability": "view",
             "superFunction": null,
@@ -1210,28 +1210,28 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1786,
+            "id": 1770,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getNextAuction",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1778,
+              "id": 1762,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "686:2:4"
             },
             "returnParameters": {
-              "id": 1785,
+              "id": 1769,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1780,
+                  "id": 1764,
                   "name": "nextStartTimeSeconds",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1786,
+                  "scope": 1770,
                   "src": "721:25:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1240,7 +1240,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1779,
+                    "id": 1763,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "721:4:4",
@@ -1254,10 +1254,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1782,
+                  "id": 1766,
                   "name": "predictedEthAvailable",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1786,
+                  "scope": 1770,
                   "src": "756:26:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1266,7 +1266,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1781,
+                    "id": 1765,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "756:4:4",
@@ -1280,10 +1280,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1784,
+                  "id": 1768,
                   "name": "predictedStartingPrice",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1786,
+                  "scope": 1770,
                   "src": "792:27:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1292,7 +1292,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1783,
+                    "id": 1767,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "792:4:4",
@@ -1307,14 +1307,14 @@
               ],
               "src": "711:118:4"
             },
-            "scope": 1787,
+            "scope": 1771,
             "src": "663:167:4",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1788,
+        "scope": 1772,
         "src": "109:725:4"
       }
     ],
@@ -1326,7 +1326,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2020-01-22T10:12:29.507Z",
+  "updatedAt": "2020-01-22T13:35:47.907Z",
   "devdoc": {
     "methods": {}
   },
