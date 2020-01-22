@@ -32,14 +32,6 @@ contract NectarController is TokenController, Ownable {
         tokenContract = INEC(_tokenAddress); // The Deployed Token Contract
     }
 
-    /// @dev The fallback function is called when ether is sent to the contract, it
-    /// simply calls `doTakerPayment()` . No tokens are created when takers contribute.
-    /// `_owner`. Payable is a required solidity modifier for functions to receive
-    /// ether, without this modifier functions will throw if ether is sent to them
-
-    function () external payable {
-    }
-
 /////////////////
 // TokenController interface
 /////////////////
@@ -118,16 +110,18 @@ contract NectarController is TokenController, Ownable {
         emit ClaimedTokens(_token, owner(), balance);
     }
 
+    /// @dev evacuateToVault - This is only used to evacuate remaining to ether from this contract to the vault address
+    function claimEther() public onlyOwner{
+        address payable to = address(uint160(owner()));
+        to.transfer(address(this).balance);
+        emit ClaimedTokens(address(0), owner(), address(this).balance);
+    }
+
 ////////////////
 // Events
 ////////////////
+
     event ClaimedTokens(address indexed _token, address indexed _controller, uint _amount);
-
-    event LogFeeTopUp(uint _amount);
-    event LogFeeEvacuation(uint _amount);
-    event LogContributions (address _user, uint _amount, bool _maker);
-    event LogClaim (address _user, uint _amount);
-
     event UpgradedController (address newAddress);
 
 }
